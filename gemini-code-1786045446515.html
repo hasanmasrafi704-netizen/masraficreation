@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masrafi Creation - Personal Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 10%;
+            background-color: #1e293b;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        nav a {
+            color: #f8fafc;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero span {
+            color: #38bdf8;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #0284c7;
+            color: #ffffff;
+        }
+        section {
+            padding: 4rem 10%;
+        }
+        .heading {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #38bdf8;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0284c7;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav>
+        <div class="logo">Masrafi Creation</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm <span>Masrafi</span></h1>
+        <p>Welcome to my personal portfolio. I create amazing digital experiences and modern web applications.</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="heading">About Me</h2>
+        <p style="text-align: center; color: #94a3b8;">
+            I am a passionate creator focused on design, development, and innovation. Passionate about solving complex problems and turning ideas into reality.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="heading">My Projects</h2>
+        <div class="projects-grid">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Short description of your project goes here.</p>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Short description of your project goes here.</p>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Short description of your project goes here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="text-align: center;">
+        <h2 class="heading">Contact Me</h2>
+        <p style="color: #94a3b8; margin-bottom: 20px;">Feel free to reach out for collaborations or just a friendly chat!</p>
+        <a href="mailto:your-email@example.com" class="btn">Send Email</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Masrafi Creation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
